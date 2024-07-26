@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tauseef-Yusufzai-Portfolio</title>
+    <link rel="stylesheet" href="mainstyles.css">
+    <link href="https://fonts.cdnfonts.com/css/mistral" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2f220b054a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" id="home">
+                <img src="./gifs/6 gif.gif" id="img-gif6"> <a href="index.html"> Tauseef Yusufzai</a>
+
+            </div>
+            <div class="right" id="nav-links">
+                <a href="#home">HOME <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                <a href="#about">ABOUT <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                <a href="#project">PROJECTS <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                <a href="#profiles">CONTACT ME <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                &#9776;
+            </button>
+            <script>
+                document.getElementById('hamburger').addEventListener('click', function () {
+                    var navLinks = document.getElementById('nav-links');
+                    if (navLinks.classList.contains('show')) {
+                        navLinks.classList.remove('show');
+                    } else {
+                        navLinks.classList.add('show');
+                    }
+                });
+            </script>
+        </nav>
+    </header>
+    <main>
+
+        <section class="firstsection-back">
+            <section class="firstsection">
+                <div class="leftsection">
+                    <img src="./Images/Profilepic.jpg" class="center">
+                </div>
+                <div class="rightsection">
+                    <div class="name1">
+                        <p>Hello, I'm</p>
+                    </div>
+                    <div class="name2">Tauseef Akhtar Yusufzai</div>
+                    <div class="name3">
+                        <p>and I am Passionate about</p>
+                    </div>
+                    <span id="element"></span>
+                    <script>
+                        var typed = new Typed('#element', {
+                            strings: ['Software Development', 'Game Development', 'Data Analytics', 'Graphic Designing', '&amp; Web Development'],
+                            typeSpeed: 100,
+                        });
+                    </script><br>
+                    <a href="./Images/Tauseef Akhtar Yusufzai resume.pdf" target="_blank"><button class="btn"><i
+                                class="fa fa-download"></i> Download Resume</button></a>
+            </section>
+        </section>
+        <section class="secondsection" id="about">
+            <h1 class="secondsection-h1"><i class="fa fa-address-book"></i> About</h1>
+
+            <div class="master-about">
+                <div class="about-box">
+                    <img src="./Images/profilepic2.jpg" class="profilepic2"><br>
+                    <div class="about-box-fa-stop-box-name"><i class="fa fa-stop" aria-hidden="true"
+                            id="fa-stop-box"></i>
+                        <div id="name"> I'm Tasueef Akhtar Yusufzai, a Computer Science Engineer</div><br>
+                    </div>
+                    <p class="about-box-content">I'm aspiring full-stack developer with a keen interest in front-end
+                        development, particularly with the React library. My passion extends to game development, web
+                        development, and graphic design. I am also
+                        well-versed in big data analytics and have a growing interest in machine learning and AI. I am
+                        dedicated to continuously improving my skills and contributing to innovative projects. I am
+                        seeking opportunities that align with my passion for creating immersive gaming experiences and
+                        leveraging my diverse knowledge in software development and data analytics. </p>
+                    <br>
+                    <div id="myedu" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <div class="my-edu-detail">
+                                <h1 class="edu-quali-head"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    Education</h1>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> Graduation (2021-2025)</h2>
+                                <p class="edu-quali-subhead-content">Currently pursuing a Bachelor of Technology in
+                                    Computer Science and Engineering at Institute Of Technology and Management, GIDA,
+                                    Gorakhpur, Affiliated to AKTU Lucknow.</p>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> Intermediate (2019-2020)</h2>
+                                <p class="edu-quali-subhead-content">Completed Intermediate education form M.S.I. Inter
+                                    College Buxipur, Gorakhpur</p>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> High School (2017-2018)</h2>
+                                <p class="edu-quali-subhead-content">Completed High School education from M.S.I. Inter
+                                    College, Buxipur, Gorakhpur.</p>
+
+                                <h1 class="edu-quali-head"><i class="fa fa-user" aria-hidden="true"></i>
+                                    Work Experience</h1>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> Web Developer Intern (2023-2024)</h2>
+                                <h3 class="edu-quali-subsubhead"> Codsoft IT Services and IT Consulting. Kolkata, West
+                                    Bengal</h3>
+                                <p class="edu-quali-subhead-content">
+                                <h3 class="edu-quali-subhead-content-head"><i>Achievements/Tasks</i></h3>
+                                <ul class="edu-quali-subhead-content-ul">
+                                    <li>Developed a portfolio website showcasing personal projects and skills.</li>
+                                    <li>Created a landing page for a web application.</li>
+                                    <li>Built a calculator application using JavaScript.</li>
+                                    <li>Shared my fine Arts skills with designer team in building UI
+                                        web App.</li>
+                                    <li>Actively Engaged in team standups and share my view on
+                                        UI/UX part. </li>
+                                </ul>
+                                </p>
+                                <h1 class="edu-quali-head"><i class="fa fa-certificate" aria-hidden="true"></i>
+                                    Certificates</h1>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> JavaScript (4/2022-5/2022)</h2>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> Web Developer Intern (12/2023-1/2024)</h2>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> Unity Game Development (11/2023-12/2023)</h2>
+                                <h2 class="edu-quali-subhead"><i class="fa fa-angle-double-right"
+                                        aria-hidden="true"></i> Advance Diploma in Computer Application (6/2019-7/2020)
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="overlay-btn" onclick="openNav()">&#9776; More Educational Details<img
+                            src="./gifs/1 gif.gif" id="img-gif1"></span>
+                    <script>
+                        function openNav() {
+                            document.getElementById("myedu").style.width = "100%";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("myedu").style.width = "0%";
+                        }
+                    </script>
+                </div>
+                <div class="about-box2">
+                    <h1 class="skills-head">Skills</h1>
+                    <p>Full-Stack Development</p>
+                    <div class="container">
+                        <div class="skills Fsd">80%</div>
+                    </div>
+                    <p>Software Development</p>
+                    <div class="container">
+                        <div class="skills Sd">70%</div>
+                    </div>
+                    <p>Game Designing</p>
+                    <div class="container">
+                        <div class="skills Gd">50%</div>
+                    </div>
+
+                    <p>Graphic Designing</p>
+                    <div class="container">
+                        <div class="skills Grd">90%</div>
+                    </div>
+
+                    <p>Languages</p>
+                    <div class="container">
+                        <div class="skills Lan">70%</div>
+                    </div>
+                    <p class="about-box2-skills-content">Adventurous learning and exploring skill, Fluent in multiple
+                        languages, skilled in
+                        various tools, and
+                        always learning something new.
+                        #Multilingual #Polyglot #LifelongLearner <br>Embracing the diversity of skills and
+                        knowledge to
+                        empower
+                        every endeavor. #SkillfulSoul #ToolEnthusiast
+                    </p>
+                </div>
+            </div>
+            <div class="about-box3">
+                <h2 class="about-box3-h1"><i class="fa fa-line-chart"></i> Languages and Tools</h2>
+                <img src="./gifs/3 gif.gif" id="img-gif3">
+                <div class="techtable">
+                    <img src="./logo/1 c.png" alt="C-Programming">
+                    <img src="./logo/2 c++.png">
+                    <img src="./logo/3 c-sharp.png">
+                    <img src="./logo/5 html-5.png">
+                    <img src="./logo/6 css-3.png">
+                    <img src="./logo/8 js.png">
+                    <img src="./logo/8 python.png">
+                    <img src="./logo/9 git.png">
+                    <img src="./logo/10  mysql.png">
+                    <img src="./logo/11 photoshop.png">
+                    <img src="./logo/12 illustrator.png">
+                    <img src="./logo/13 xd.png">
+                    <img src="./logo/14 lightroom.png">
+                    <img src="./logo/15 pagemaker.png">
+                    <img src="./logo/16 unity.png">
+                    <img src="./logo/17 office.png">
+                    <img src="./logo/18 tally.png">
+                    <img src="./logo/19 corel.png">
+                    <img src="./logo/20 figma.png">
+                    <img src="./logo/21 canva.png">
+                    <img src="./logo/22 java.png">
+                    <img src="./logo/23 github.png">
+                </div>
+            </div>
+            <div class="about-box4">
+                <div class="about-box4-left">
+                    <img src="./gifs/15 gif2.gif">
+                    <div class="about-box4-left-head">Explore the World of</i>
+                        <h1 class="about-box4-left-name">Tauseef Yusufzai</h1>
+                    </div>
+                    <p>Creating the reality, Making ideas happen</p>
+                </div>
+                <div class="about-box4-right">
+                    <img src="./Images/Tauseeflogo.png"><br>
+                    <a href="index.html"><button class="btn">
+                            coming soon <i class="fa fa-circle-o-notch fa-spin"></i></button></a>
+                </div>
+            </div>
+        </section>
+        <section class="project-section-back">
+            <section class="project-section" id="project">
+                <div class="project-section-left">
+                    <div class="project-section-left-heading">
+                        <i class="fa fa-file"></i> Projects <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <img src="./gifs/12 gif.gif" id="img-gif5">
+                    </div>
+                </div>
+                <div class="project-section-right">
+                    <ul class="project-section-right-ul">
+                        <li>
+                            <div class="project-section-right-ul-li-div1">
+                                <div class="project-section-right-ul-li-div1-left">
+                                    <img src="./Images/project-1.png" id="proj-img1">
+
+                                </div>
+                                <div class="project-section-right-ul-li-div1-right">
+                                    <h2 class="project-section-right-ul-li-div1-right-h2">Portfolio Website <i
+                                            class="fa fa-angle-double-right" aria-hidden="true"></i></h2>
+                                    <p>Designed and developed a <b>Personal Portfolio</b> website to showcase a
+                                        collection of projects, skills, and achievements. The website serves as
+                                        a dynamic representation of my work, providing an interactive and
+                                        visual overview for potential collaborators and employers.</p>
+                                    <span class="tag-cloud">HTML5</span>
+                                    <span class="tag-cloud">CSS3</span>
+                                    <span class="tag-cloud">JS</span><br>
+                                    <a href="https://tauseefyusufzai.github.io/Portfolio-Web/" target="_blank"><button
+                                            class="project-section-right-ul-li-div1-right-btn"><span>View
+                                            </span></button></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-section-right-ul-li-div1">
+                                <div class="project-section-right-ul-li-div1-left">
+                                    <img src="./Images/project-2.png" id="proj-img1">
+
+                                </div>
+                                <div class="project-section-right-ul-li-div1-right">
+                                    <h2 class="project-section-right-ul-li-div1-right-h2">Levna Edit pro landing page
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </h2>
+                                    <p>Designed a landing page for <b>Levna Edit Pro:</b> A sleek and user-friendly
+                                        photo
+                                        editing application,
+                                        designed using HTML5 and CSS3. This project highlights my front-end development
+                                        skills and ability to create modern,
+                                        functional interfaces.</p>
+                                    <span class="tag-cloud">HTML5</span>
+                                    <span class="tag-cloud">CSS3</span>
+                                    <span class="tag-cloud">JS</span><br>
+                                    <a href="https://tauseefyusufzai.github.io/Landing-page/" target="_blank"><button
+                                            class="project-section-right-ul-li-div1-right-btn"><span>View
+                                            </span></button></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-section-right-ul-li-div1">
+                                <div class="project-section-right-ul-li-div1-left">
+                                    <img src="./Images/project-3.jpg" id="proj-img1">
+
+                                </div>
+                                <div class="project-section-right-ul-li-div1-right">
+                                    <h2 class="project-section-right-ul-li-div1-right-h2">GTA San Andreas Graphic Mod
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </h2>
+                                    <p>Developed and uploaded a custom graphic modification for <b>Grand
+                                            Theft Auto: San Andreas</b> on <b>GTainside.com.</b> The mod garnered
+                                        40,000+ downloads, showcasing the ability to create popular and
+                                        engaging content within the gaming community. This project involved designing
+                                        and implementing visual enhancements to enhance the gaming experience for users.
+                                        Received positive feedback and reviews from the modding community.</p>
+                                    <span class="tag-cloud"><i class="fa fa-download" aria-hidden="true"></i>
+                                        40,000+</span><br>
+                                    <a href="https://www.gtainside.com/en/sanandreas/mods/158618-gta-sa-graphics/"
+                                        target="_blank"><button
+                                            class="project-section-right-ul-li-div1-right-btn"><span>Download
+                                            </span></button></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-section-right-ul-li-div1">
+                                <div class="project-section-right-ul-li-div1-left">
+                                    <img src="./Images/project-4.gif" id="proj-img1">
+
+                                </div>
+                                <div class="project-section-right-ul-li-div1-right">
+                                    <h2 class="project-section-right-ul-li-div1-right-h2">Uploading <i
+                                            class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i></h2>
+                                    <p><img src="./Images/loading-loader.gif" width="100px" style="margin-left: 150px;">
+                                    </p>
+                                    <a href="" target="_blank"><button
+                                            class="project-section-right-ul-li-div1-right-btn"><span>Wait
+                                            </span></button></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project-section-right-ul-li-div1">
+                                <div class="project-section-right-ul-li-div1-left">
+                                    <img src="./Images/project-4.gif" id="proj-img1">
+
+                                </div>
+                                <div class="project-section-right-ul-li-div1-right">
+                                    <h2 class="project-section-right-ul-li-div1-right-h2">Uploading <i
+                                            class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i></h2>
+                                    <p><img src="./Images/loading-loader.gif" width="100px" style="margin-left: 150px;">
+                                    </p>
+                                    <a href="" target="_blank"><button
+                                            class="project-section-right-ul-li-div1-right-btn"><span>Wait
+                                            </span></button></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="thirdsection" id="profiles">
+            <div class="profile">
+                <div class="profile-box">
+                    <h1 class="profile-box-h1">Contact Me</h1>
+                    <img src="./gifs/Hi contact.gif" width="150px">
+                    <p class="profile-box-content-name"> Tauseef Akhtar Yusufzai</p>
+                    <p class="profile-box-content"> <i class="fa fa-map-marker" aria-hidden="true"></i> Gorakhpur, India
+                    </p>
+                    <p class="profile-box-content"> <i class="fa fa-envelope" aria-hidden="true"></i>
+                        tauseefakhtaryusufzai@gmail.com</p>
+                    <p class="profile-box-content"> <i class="fa-solid fa-phone" aria-hidden="true"></i> +91-7525949094
+                    </p>
+
+                </div>
+                <div class="profile-box-links">
+                    <div class="profile-box-links-left">
+                        <h1 class="profile-box-links-h1">Living, learning, & leveling up one day at a time.</h1>
+                        <ul>
+                            <li><a href="#home">Home</a> </li>
+                            <li><a href="#about">About</a> </li>
+                            <li><a href="#project">Project</a> </li>
+                            <li><a href="#contact">Contact</a> </li>
+                        </ul>
+
+                    </div>
+                    <div class="profile-box-links-right">
+                        <h1 class="profile-box-links-social-h1">Social Media</h1>
+                        <p>
+                            <a href="https://github.com/Tauseefyusufzai" target="_blank"> <i
+                                    class="fa-brands fa-square-github"></i></a>
+
+                            <a href="" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+
+                            <a href="https://www.linkedin.com/in/tauseef-akhtar-yusufzai-b989b220b/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+
+                            <a href="https://www.instagram.com/tauseef_yusufzai_/" target="_blank"><i
+                                    class="fa-brands fa-square-instagram"></i></a>
+
+                            <a href="https://www.facebook.com/tauseefakhtar.yusufzai/" target="_blank"><i
+                                    class="fa-brands fa-square-facebook"></i></a><br>
+
+                            <a href="https://twitter.com/akhtar_yusufzai" target="_blank"><i
+                                    class="fa-brands fa-square-x-twitter"></i></a>
+
+                            <a href="" target="_blank"><i class="fa-brands fa-square-reddit"></i></a>
+
+                            <a href="https://in.pinterest.com/tauseefakhtary/" target="_blank"><i
+                                    class="fa-brands fa-square-pinterest"></i></a>
+
+                            <a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="profile-box0">
+                    <div class="contact">
+                        <form>
+                            <label for="fname">Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your Name.." required>
+
+                            <label for="fname">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email.." required>
+
+                            <label for="number">Contact No</label>
+                            <input type="number" id="number" name="number" placeholder="Your Contact No..." required>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Your Message.." required></textarea>
+
+                            <button type="submit" class="profile-box0-contact-btn">Send <i
+                                    class="fa fa-location-arrow"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerbox">
+            <img src="./Images/Tauseeflogoname1.png">
+            <p>Copyright <i class="fa fa-copyright"></i> 2024 All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
