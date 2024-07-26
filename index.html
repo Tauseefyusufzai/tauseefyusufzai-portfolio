@@ -19,30 +19,28 @@
 <body>
     <header>
         <nav>
-            <div class="left" id="home">
-                <img src="./gifs/6 gif.gif" id="img-gif6"> <a href="index.html"> Tauseef Yusufzai</a>
-
+            <div>
+                <img src="./gifs/6 gif.gif" id="img-gif6"> 
+                <a href="index.html" class="left"> Tauseef Yusufzai</a>
             </div>
-            <div class="right" id="nav-links">
-                <a href="#home">HOME <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                <a href="#about">ABOUT <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                <a href="#project">PROJECTS <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                <a href="#profiles">CONTACT ME <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-            </div>
-            <button class="hamburger" id="hamburger">
-                &#9776;
-            </button>
-            <script>
-                document.getElementById('hamburger').addEventListener('click', function () {
-                    var navLinks = document.getElementById('nav-links');
-                    if (navLinks.classList.contains('show')) {
-                        navLinks.classList.remove('show');
-                    } else {
-                        navLinks.classList.add('show');
-                    }
-                });
-            </script>
+            <ul class="ul" id="headernav">
+                <li><a href="#home">HOME <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#about">ABOUT <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#project">PROJECT <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#profiles">CONTACT <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        <script>
+            var headernav = document.getElementById("headernav");
+            function openmenu() {
+                headernav.style.right = "0";
+            }
+            function closemenu() {
+                headernav.style.right = "-200px";
+            }
+        </script>
     </header>
     <main>
 
@@ -409,7 +407,7 @@
                 </div>
                 <div class="profile-box0">
                     <div class="contact">
-                        <form>
+                        <form id="myForm">
                             <label for="fname">Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your Name.." required>
 
@@ -426,6 +424,25 @@
                                     class="fa fa-location-arrow"></i>
                             </button>
                         </form>
+                        <script>
+                            //app script demployment url https://script.google.com/macros/s/AKfycbwAjdgirrSLC-W2OC8ScYPqRNR-LXjcrHE-3q3ncj_Up0achf6Iv829DbBL7XiOWvas/exec//
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbwAjdgirrSLC-W2OC8ScYPqRNR-LXjcrHE-3q3ncj_Up0achf6Iv829DbBL7XiOWvas/exec';
+                            const form = document.forms['myForm'];
+                    
+                            form.addEventListener('submit', e => {
+                                e.preventDefault();
+                                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        if (data.result === "success") {
+                                            alert("Form submitted successfully!");
+                                        } else {
+                                            alert("There was an error submitting the form.");
+                                        }
+                                    })
+                                    .catch(error => alert("There was an error submitting the form: " + error.message));
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
