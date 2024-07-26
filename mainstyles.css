@@ -40,23 +40,19 @@ nav {
 nav .fa-solid {
     display: none;
 }
-
+.logoname{
+    width: 250px;
+    transition: 0.3s;
+}
+.logoname:hover{
+    transform: scale(1.2);
+}
 .left {
-    font-family: 'Mistral', sans-serif;
-    font-size: 3rem;
     float: left;
-    color: rgb(15, 103, 177);
-    text-align: center;
     padding: 10px 30px;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.2s;
+}
 
-}
-.left:hover {
-    color: rgb(63, 162, 246);
-    transition: 0.2s;
-}
 nav ul li {
     display: inline-block;
     list-style: none;
@@ -915,6 +911,9 @@ footer {
 
     .left {
         font-size: 2rem;
+    }
+    .logoname{
+        width: 150px;
     }
     #img-gif6 {
         width: 80px;
