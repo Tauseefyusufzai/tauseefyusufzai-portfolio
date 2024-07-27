@@ -20,7 +20,7 @@
     <header>
         <nav>
             <div>
-                <img src="./gifs/6 gif.gif" id="img-gif6"> 
+                <img src="./gifs/6 gif.gif" id="img-gif6">
                 <a href="index.html" class="left"> <img src="./Images/Tauseeflogoname.png" class="logoname"> </a>
             </div>
             <ul class="ul" id="headernav">
@@ -76,15 +76,13 @@
                     <img src="./Images/profilepic2.jpg" class="profilepic2"><br>
                     <div class="about-box-fa-stop-box-name"><i class="fa fa-stop" aria-hidden="true"
                             id="fa-stop-box"></i>
-                        <div id="name"> I'm Tasueef Akhtar Yusufzai, a Computer Science Engineer</div><br>
+                        <div id="name"> I'm Tasueef Akhtar Yusufzai, a B.Tech candidate in Computer Science and Engineering .</div><br>
                     </div>
-                    <p class="about-box-content">I'm aspiring full-stack developer with a keen interest in front-end
-                        development, particularly with the React library. My passion extends to game development, web
-                        development, and graphic design. I am also
-                        well-versed in big data analytics and have a growing interest in machine learning and AI. I am
-                        dedicated to continuously improving my skills and contributing to innovative projects. I am
-                        seeking opportunities that align with my passion for creating immersive gaming experiences and
-                        leveraging my diverse knowledge in software development and data analytics. </p>
+                    <p class="about-box-content">I am a passionate and aspiring developer with interests in Web Development, Software Development, and Game development. My
+                        experience includes front-end development with HTML, CSS, JavaScript and React. I am also delving into big data
+                        analytics, machine learning, and AI to expand my skill set. I am dedicated to continuously improving my
+                        skills and contributing to innovative projects, combining my technical skills with a creative approach to
+                        drive innovation and craft engaging digital experiences.</p>
                     <br>
                     <div id="myedu" class="overlay">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -234,7 +232,8 @@
             <section class="project-section" id="project">
                 <div class="project-section-left">
                     <div class="project-section-left-heading">
-                        <i class="fa fa-file"></i> Projects <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        <i class="fa fa-file"></i> Featured Work <i class="fa fa-angle-double-right fa-beat" aria-hidden="true"></i>
+                        <p>"An overview of projects that reflect my problem-solving and development skills. highlighting my technical and creative abilities"</p>
                     </div>
                     <div>
                         <img src="./gifs/12 gif.gif" id="img-gif5">
@@ -258,7 +257,8 @@
                                     <span class="tag-cloud">HTML5</span>
                                     <span class="tag-cloud">CSS3</span>
                                     <span class="tag-cloud">JS</span><br>
-                                    <a href="https://tauseefyusufzai.github.io/tauseefyusufzai-portfolio/" target="_blank"><button
+                                    <a href="https://tauseefyusufzai.github.io/tauseefyusufzai-portfolio/"
+                                        target="_blank"><button
                                             class="project-section-right-ul-li-div1-right-btn"><span>View
                                             </span></button></a>
                                 </div>
@@ -409,6 +409,7 @@
                 </div>
                 <div class="profile-box0">
                     <div class="contact">
+                        <h2>Let's get in touch. Send me a message:</h2>
                         <form id="myForm">
                             <label for="fname">Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your Name.." required>
@@ -417,9 +418,9 @@
                             <input type="email" id="email" name="email" placeholder="Your Email.." required>
 
                             <label for="number">Contact No</label>
-                            <input type="number" id="number" name="number" placeholder="Your Contact No..." required>
+                            <input type="number" id="number" name="number" placeholder="Your Contact No... optional">
 
-                            <label for="subject">Subject</label>
+                            <label for="subject">Message</label>
                             <textarea id="subject" name="subject" placeholder="Your Message.." required></textarea>
 
                             <button type="submit" class="profile-box0-contact-btn">Send <i
@@ -430,19 +431,19 @@
                             //app script demployment url https://script.google.com/macros/s/AKfycbwAjdgirrSLC-W2OC8ScYPqRNR-LXjcrHE-3q3ncj_Up0achf6Iv829DbBL7XiOWvas/exec//
                             const scriptURL = 'https://script.google.com/macros/s/AKfycbwAjdgirrSLC-W2OC8ScYPqRNR-LXjcrHE-3q3ncj_Up0achf6Iv829DbBL7XiOWvas/exec';
                             const form = document.forms['myForm'];
-                    
+
                             form.addEventListener('submit', e => {
                                 e.preventDefault();
-                                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                                     .then(response => response.json())
                                     .then(data => {
                                         if (data.result === "success") {
-                                            alert("Form submitted successfully!");
+                                            alert("Message Send successfully!");
                                         } else {
-                                            alert("There was an error submitting the form.");
+                                            alert("There was an error Sending the Message.");
                                         }
                                     })
-                                    .catch(error => alert("There was an error submitting the form: " + error.message));
+                                    .catch(error => alert("There was an error Sending the Message: " + error.message));
                             });
                         </script>
                     </div>

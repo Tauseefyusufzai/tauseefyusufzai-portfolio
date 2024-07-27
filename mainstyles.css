@@ -207,8 +207,8 @@ nav ul li a:hover {
 
 .about-box {
     text-align: left;
-    width: 560px;
-    padding: 30px;
+    width: 600px;
+    padding: 40px;
     font-size: 13px;
 }
 
@@ -217,14 +217,15 @@ nav ul li a:hover {
 }
 
 #fa-stop-box {
-    padding-top: 10px;
+    padding-top: 7px;
     color: rgb(15, 103, 177);
     font-size: 1.5rem;
 }
 
 #name {
+    width: 100%;
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bolder;
 }
 
@@ -342,13 +343,13 @@ nav ul li a:hover {
 }
 
 .about-box2 {
-    width: 400px;
-    margin: 50px;
+    width: 500px;
+    padding: 50px;
     font-size: 18px;
 }
 
 .about-box2-skills-content {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .skills-head {
@@ -563,7 +564,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./gifs/bg\ gif2.gif);
+    background-color: rgb(150, 201, 244);
     opacity: 0.3;
     z-index: -1;
 }
@@ -582,9 +583,17 @@ nav ul li a:hover {
 }
 
 .project-section-left-heading {
-    margin-top: 5%;
+    color: rgb(15, 103, 177);
+    margin-top: 12%;
+    margin-left: 90px;
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 3rem;
+}
+.project-section-left-heading p{
+    font-size: 1rem;
+    text-align: left;
+    color: black;
+    margin-left: 90px;
 }
 
 #img-gif5 {
@@ -604,6 +613,10 @@ nav ul li a:hover {
 }
 
 .project-section-right-ul-li-div1 {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 1px 20px 0 rgba(194, 194, 194, 0.2);
+    margin-top: 20px;
     padding: 10px;
     justify-content: flex-start;
     display: flex;
@@ -865,6 +878,9 @@ textarea {
     border-radius: 5px;
     padding: 10px;
 }
+.contact h2{
+    color: rgb(15, 103, 177);
+}
 
 footer {
     background-color: rgb(15, 103, 177);
@@ -962,7 +978,8 @@ footer {
     }
 
     .logoname {
-        width: 150px;
+        padding-top: 10px;
+        width: 180px;
     }
 
     #img-gif6 {
@@ -1065,7 +1082,6 @@ footer {
         margin-left: 25%;
         transition: 0.5s;
         width: 200px;
-        border-radius: 0%;
         margin-bottom: 20px;
     }
 
@@ -1086,7 +1102,7 @@ footer {
     }
 
     #name {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .overlay a {
@@ -1128,7 +1144,10 @@ footer {
     .skills-head {
         font-size: 2.5rem;
     }
-
+    .about-box2-skills-content {
+        text-align: justify;
+        font-size: 11px;
+    }
     .about-box1-h1 {
         text-align: left;
         margin-top: 5%;
@@ -1144,10 +1163,13 @@ footer {
     }
 
     .about-box3-h1 {
+        margin-top: 20px;
         font-size: 1.5rem;
     }
 
     .about-box4 {
+        margin-top: 30px;
+        padding: 0px;
         display: block;
     }
 
@@ -1162,14 +1184,35 @@ footer {
     .about-box4-left-name {
         font-size: 2rem;
     }
+    .about-box4-right {
+        margin-top: 0px;
+    }
+    .project-section-back{
+        margin-top: 50px;
+    }
 
     .project-section {
         display: grid;
         align-items: center;
     }
+    .project-section-left {
+        width: 100%;
+    }
+    .project-section-right{
+        padding: 0%;
+    }
 
     .project-section-left-heading {
+        transition: 0.3s;
+        margin-top: 0%;
+        margin-left: 0%;
         font-size: 2rem;
+    }
+    .project-section-left-heading p{
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+        margin-left: 0px;
     }
 
     #img-gif5 {
@@ -1177,11 +1220,21 @@ footer {
     }
 
     .project-section-right-ul-li-div1 {
+        margin-top: 10px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 1px 20px 0 rgba(194, 194, 194, 0.5);
         display: block;
     }
 
     .project-section-right-ul-li-div1-left {
         margin-left: 15px;
+    }
+    .footerbox img {
+        width: 180px;
+    }
+    .contact h2{
+        font-size: 1rem;
     }
 
 }
@@ -1191,10 +1244,17 @@ footer {
         font-size: 1rem;
         padding: 10px;
     }
+    .secondsection-h1{
+        font-size: 2.5rem;
+    }
 
     .profilepic2 {
         margin-left: 25%;
-        width: 180px;
+        width: 150px;
+    }
+    .profilepic2:hover{
+        border-radius: 50%;
+        width: 150px;
     }
 
     .about-box3-left p {
@@ -1218,6 +1278,14 @@ footer {
         display: block;
         /* Ensure boxes stack vertically */
     }
+    .about-box-content {
+        text-align: justify;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .overlay-btn {
+        margin-left: 20px;
+    }
 
     .about-box3 {
         flex-direction: column;
@@ -1229,12 +1297,8 @@ footer {
         width: 100%;
     }
 
-    .techtable {
-        margin-top: 30px;
-    }
-
     .techtable img {
-        width: 80px;
+        width: 60px;
         padding: 8px;
         transition: 0.8s;
     }
