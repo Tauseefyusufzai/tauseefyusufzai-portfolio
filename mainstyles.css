@@ -983,14 +983,21 @@ footer {
     }
 
     #img-gif6 {
-        width: 80px;
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    nav{
+        padding-left: 0%;
+        padding-right: 20px;
     }
 
     nav ul {
         top: 0;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: right 0.3s;
         right: -200px;
         width: 200px;
         height: 100vh;
@@ -1039,15 +1046,15 @@ footer {
     }
 
     .name2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .name3 {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     #element {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .center {
